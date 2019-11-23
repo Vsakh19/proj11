@@ -1,5 +1,7 @@
 "use strict";
 
+import "./style.css"
+
 class  API {
     constructor(request){
         this.request = request;

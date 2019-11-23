@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css">
+
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
 <div class="root">
     <header class="header root__section">
-        <img src="./images/logo.svg" alt="mesto logo" class="logo">
+        <img src="./src/images/logo.svg" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
         <div class="user-info">
@@ -27,7 +28,7 @@
 </div>
 <div class="popup popup-newPlace">
     <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="./src/images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new">
             <div class="popup__input-block">
@@ -44,7 +45,7 @@
 </div>
 <div class="popup popup-edit">
     <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-profile">
+        <img src="./src/images/close.svg" alt="" class="popup__close popup__close-profile">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="edit" novalidate>
             <div class="popup__input-block">
@@ -62,9 +63,10 @@
 <div class="popup background-blur">
     <div class="image-block">
         <img alt="" class="popup-image">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-picture">
+        <img src="./src/images/close.svg" alt="" class="popup__close popup__close-picture">
     </div>
 </div>
-<script src="script.js"></script>
+
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
