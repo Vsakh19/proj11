@@ -178,9 +178,9 @@ class CardList {
 }
 
 
-
+  const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort4' : 'https://praktikum.tk/cohort4';
   const session = new API({
-      baseUrl: 'http://95.216.175.5/cohort4',
+      baseUrl: 'serverUrl',
       headers: {
           authorization: '64054b97-077f-410e-a42b-579936b99c8f',
           ContentType: 'application/json'
@@ -196,6 +196,7 @@ class CardList {
   const pictureBlur = new Popup(document.querySelector(".background-blur"));
   const initialCards = [];
   let cardList = null;
+
 
 
 session.setUser();
