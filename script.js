@@ -1,112 +1,15 @@
 "use strict";
 
-import "./style.css"
+import "./style.css";
 import {serverUrl, session, API} from "./src/api.js";
-
-
-class Card {
-    constructor(name, link, likes){
-        this.likes = likes;
-        this.name = name;
-        this.link = link;
-        this.card = this.create(this.name, this.link, this.likes);
-    }
-
-    events(card){
-        card.querySelector(".place-card__like-icon").addEventListener("click", ()=>{
-            this.like(card);
-        });
-        card.querySelector(".place-card__delete-icon").addEventListener("click", ()=>{
-            this.remove(card);
-        });
-    }
-
-    like(card){
-        card.querySelector(".place-card__like-icon").classList.toggle("place-card__like-icon_liked");
-    }
-
-    remove(card){
-        card.parentNode.removeChild(card);
-    }
-
-    create(name, link, likes){
-        const plcard = document.createElement("div");
-        plcard.classList.add("place-card");
-        const cardimg = document.createElement("div");
-        cardimg.classList.add("place-card__image");
-        cardimg.setAttribute("style", `background-image: url(${link})`);
-        const cardbtn = document.createElement("button");
-        cardbtn.classList.add("place-card__delete-icon");
-        cardimg.appendChild(cardbtn);
-        const desc = document.createElement("div");
-        desc.classList.add("place-card__description");
-        const header = document.createElement("h3");
-        header.classList.add("place-card__name");
-        header.textContent = name;
-        const likeContainer = document.createElement("div");
-        likeContainer.classList.add("place-card__like-container");
-        const likebtn = document.createElement("button");
-        likebtn.classList.add("place-card__like-icon");
-        const likeAmount = document.createElement("p");
-        likeAmount.classList.add("place-card__name");
-        likeAmount.textContent = likes;
-        desc.appendChild(header);
-        likeContainer.appendChild(likebtn);
-        likeContainer.appendChild(likeAmount);
-        desc.appendChild(likeContainer);
-        plcard.appendChild(cardimg);
-        plcard.appendChild(desc);
-        this.events(plcard);
-        return plcard;
-    }
-}
-
-class  Popup {
-    constructor(elem){
-        this.elem = elem;
-        this.formWithin = elem.querySelector(".popup__form");
-        this.closeButton = elem.querySelector(".popup__close");
-        this.addEvents();
-    }
-
-    open(){
-        this.elem.classList.add("popup_is-opened");
-    }
-    close(){
-        this.elem.classList.remove("popup_is-opened");
-    }
-    addEvents(){
-        this.closeButton.addEventListener("click", ()=>{
-            this.close();
-        });
-    }
-}
-
-class CardList {
-    constructor(container, masCards){
-        this.container = container;
-        this.masCards = masCards;
-    }
-
-
-    addCard(card){
-        this.container.appendChild(card);
-    }
-
-    render(){
-        for (let i = 0; i<this.masCards.length; i++){
-            this.addCard(new Card(this.masCards[i].name, this.masCards[i].link, this.masCards[i].likes.length).card);
-        }
-    }
-}
-
+import {Card} from "./src/Card.js";
+import {CardList} from "./src/CardList.js";
+import {Popup} from "./src/Popup.js";
 
 
 
   const formButton = document.querySelector(".user-info__button");
   const editButton = document.querySelector(".user-info__edit-button");
-  const userInfo = document.querySelector(".user-info__name");
-  const userJob = document.querySelector(".user-info__job");
   const popupEdit = new Popup(document.querySelector(".popup-edit"));
   const popupNewPlace = new Popup(document.querySelector(".popup-newPlace"));
   const pictureBlur = new Popup(document.querySelector(".background-blur"));
