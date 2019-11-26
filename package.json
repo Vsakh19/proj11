@@ -1,6 +1,7 @@
 {
   "name": "proj11",
-  "version": "1.0.0",
+  "homepage": "https://github.com/Vsakh19/proj11/",
+  "version",: "1.0.1",
   "description": "",
   "main": "script.js",
   "scripts": {
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Vsakh19/proj11/issues"
   },
-  "homepage": "https://github.com/Vsakh19/proj11#readme",
+  "homepage": "https://vsakh19.github.io/proj11",
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
@@ -28,6 +29,7 @@
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "file-loader": "^4.3.0",
+    "gh-pages": "~2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.8.0",
