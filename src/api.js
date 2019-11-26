@@ -1,3 +1,8 @@
+import {popupEdit} from "../script.js"
+
+const userInfo = document.querySelector(".user-info__name");
+const userJob = document.querySelector(".user-info__job");
+
 export const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort4' : 'https://praktikum.tk/cohort4';
 
 

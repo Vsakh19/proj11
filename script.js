@@ -10,7 +10,7 @@ import {Popup} from "./src/Popup.js";
 
   const formButton = document.querySelector(".user-info__button");
   const editButton = document.querySelector(".user-info__edit-button");
-  const popupEdit = new Popup(document.querySelector(".popup-edit"));
+  export const popupEdit = new Popup(document.querySelector(".popup-edit"));
   const popupNewPlace = new Popup(document.querySelector(".popup-newPlace"));
   const pictureBlur = new Popup(document.querySelector(".background-blur"));
   const initialCards = [];

@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="bbfb32b1-a03c-49b2-925b-cb0a97532025" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.e12f63f92432aa6dd97e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.82d2a4ece2ef96c244e6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/Inter-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/Inter-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +78,8 @@
       <workItem from="1571236257244" duration="12257000" />
       <workItem from="1571476726740" duration="2015000" />
       <workItem from="1574531974317" duration="33998000" />
-      <workItem from="1574727939023" duration="1096000" />
+      <workItem from="1574727939023" duration="1399000" />
+      <workItem from="1574802813274" duration="4177000" />
     </task>
     <servers />
   </component>
