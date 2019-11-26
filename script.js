@@ -1,5 +1,6 @@
 "use strict";
 
+import logo from "./src/images/logo.svg";
 import "./style.css";
 import {serverUrl, session, API} from "./src/api.js";
 import {Card} from "./src/Card.js";

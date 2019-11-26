@@ -21,10 +21,20 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             use: {
-                loader: "babel-loader"
+                loader: "babel-loader",
             }
         },
-
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'images',
+                        },
+                    },
+                ],
+            },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
@@ -32,8 +42,7 @@ module.exports = {
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            bypassOnDebug: true,
-                            disable: true,
+                            disable: false,
                         },
                     },
                 ],
